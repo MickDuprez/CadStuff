@@ -46,7 +46,7 @@ namespace Beams {
                 var btr = tr.GetObject(db.CurrentSpaceId, _AcDb.OpenMode.ForWrite) as _AcDb.BlockTableRecord;
 
                 _AcDb.Face face = new _AcDb.Face(_p0, _p1, _p2, _p3, true, true, true, true);
-                face.ColorIndex = 4;
+                face.ColorIndex = 4;   
 
                 id = btr.AppendEntity(face);
                 tr.AddNewlyCreatedDBObject(face, true);
